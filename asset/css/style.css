@@ -8,30 +8,19 @@
 }
 
 .nav-fixed {
-    z-index: 1;
-}
-
-.nav-fixed {
     position: fixed;
-    right: 0px;
-    top: 0px;
+    right: 20px;
+    top: 20px;
+    z-index: 1;
 }
 
 .nav-fixed li {
     list-style: none;
     display: inline-block;
-}
-
-/* .nav-a-1 {
-    display: inline-block;
-    background-color: white;
-    height: 30px;
-    width: 30px;
     border-radius: 50%;
-    text-align: center;
-    line-height: 30%;
-    vertical-align: center;
-} */
+    border: 1px solid black;
+    margin-left: 20px;
+}
 
 .nav-fixed a::after {
     display: inline-block;
@@ -59,7 +48,8 @@
 }
 
 .nav-fixed li:hover {
-    box-shadow: 5px 5px 0px 0px;
+    box-shadow: 5px 5px 5px;
+    font-size: 1.1rem;
 }
 
 .container {
