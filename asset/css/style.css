@@ -7,43 +7,100 @@
     font-family: Lato;
 }
 
-header nav {
-    position: fixed;
-    right: 0;
-    top: 20px;
+.nav-fixed {
+    z-index: 1;
 }
 
-header li {
+.nav-fixed {
+    background-color: pink;
+    position: fixed;
+    right: 0px;
+    top: 0px;
+}
+
+.nav-fixed li {
     list-style: none;
     display: inline-block;
 }
 
-header a {
+/* .nav-a-1 {
     display: inline-block;
-    text-decoration: none;
-    padding: 10px;
+    background-color: white;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 30%;
+    vertical-align: center;
+} */
+
+.nav-fixed a::after {
+    display: inline-block;
+    border-radius: 50%;
+
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    text-align: center;
+
     background-color: white;
     color: black;
-    border-radius: 50%;
-    margin-right: 20px;
 }
 
-header a:hover {
+.nav-a-1::after {
+    content: "1";
+}
+
+.nav-a-2::after {
+    content: "2";
+}
+
+.nav-a-3::after {
+    content: "3";
+}
+
+.nav-fixed li:hover {
     box-shadow: 5px 5px 0px 0px;
 }
 
 .container {
     height: 100vh;
-    /*inizio da cancellare*/
-    display: flex;
+    position: relative;
+    /*CON FLEX*/
+    /* display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    /*fine*/
+    align-items: center; */
+    /*FINE FLEX*/
+}
+
+.container-img-text {
+    width: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.img-container img{
+    max-width: 100%;
+}
+
+.text-container {
+    width: 100%;
+    text-align: center;
 }
 
 #viewport-1 {
     background-color: red;
+}
+
+#viewport-2 {
+    background-color: green;
+}
+
+#viewport-3 {
+    background-color: yellow;
 }
 
 .title-color-yellow {
@@ -56,15 +113,7 @@ header a:hover {
 
 .title-size {
     text-transform: uppercase;
-    font-size: 3rem;
-    margin-bottom: 10%;
+    font-size: 2rem;
 }
 
-#viewport-2 {
-    background-color: green;
-}
-
-#viewport-3 {
-    background-color: yellow;
-}
 
