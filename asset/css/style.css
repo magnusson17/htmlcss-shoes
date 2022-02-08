@@ -34,10 +34,30 @@ header a:hover {
 
 .container {
     height: 100vh;
+    /*inizio da cancellare*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /*fine*/
 }
 
 #viewport-1 {
     background-color: red;
+}
+
+.title-color-yellow {
+    color: yellow;
+}
+
+.title-color-green {
+    color: green;
+}
+
+.title-size {
+    text-transform: uppercase;
+    font-size: 3rem;
+    margin-bottom: 10%;
 }
 
 #viewport-2 {
