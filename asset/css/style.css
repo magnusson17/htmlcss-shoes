@@ -1,13 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Roboto&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Lato;
 }
 
 header nav {
     position: fixed;
     right: 0;
-    top: 10px;
+    top: 20px;
+}
+
+header li {
+    list-style: none;
+    display: inline-block;
 }
 
 header a {
@@ -18,6 +26,10 @@ header a {
     color: black;
     border-radius: 50%;
     margin-right: 20px;
+}
+
+header a:hover {
+    box-shadow: 5px 5px 0px 0px;
 }
 
 .container {
