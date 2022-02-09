@@ -7,6 +7,10 @@
     font-family: Lato;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .nav-fixed {
     position: fixed;
     right: 20px;
